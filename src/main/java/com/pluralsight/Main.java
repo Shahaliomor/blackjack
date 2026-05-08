@@ -1,3 +1,5 @@
+package com.pluralsight;
+
 import java.util.Scanner;
 
 
@@ -5,21 +7,17 @@ public class Main {
         public static void main(String[] args) {
             Scanner input = new Scanner(System.in);
 
-            System.out.println("=================================");
-            System.out.println("        Welcome to Blackjack");
-            System.out.println("=================================");
-
             System.out.print("Enter Player 1 name: ");
             String player1 = input.nextLine();
 
             System.out.print("Enter Player 2 name: ");
             String player2 = input.nextLine();
 
-            com.pluralsight.Deck deck = new com.pluralsight.Deck();
+            Deck deck = new com.pluralsight.Deck();
             deck.shuffle();
 
-            com.pluralsight.Hand hand1 = new com.pluralsight.Hand();
-            com.pluralsight.Hand hand2 = new com.pluralsight.Hand();
+            Hand hand1 = new Hand();
+            Hand hand2 = new Hand();
 
             hand1.deal(deck.deal());
             hand1.deal(deck.deal());

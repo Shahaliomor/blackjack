@@ -1,9 +1,9 @@
 package com.pluralsight;
 
-import javax.smartcardio.Card;
 import java.util.ArrayList;
 
 public class Hand {
+
     private ArrayList<Card> cards;
 
     public Hand() {
@@ -19,6 +19,7 @@ public class Hand {
         int aceCount = 0;
 
         for (Card card : cards) {
+
             total += card.getPointValue();
 
             if (card.getValue().equals("A")) {
